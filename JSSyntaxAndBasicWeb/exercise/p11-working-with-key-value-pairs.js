@@ -6,11 +6,7 @@ function solve(input) {
         if (tokens[1] !== undefined) {
             obj[tokens[0]] = tokens[1];
         } else {
-            if (tokens[0] in obj) {
-                console.log(obj[tokens[0]]);
-            } else {
-                console.log('None');
-            }
+            tokens[0] in obj ? console.log(obj[tokens[0]]) : console.log('None');
         }
     }
 }
